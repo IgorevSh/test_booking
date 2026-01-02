@@ -14,7 +14,7 @@ export class DatabaseService {
     @Inject('SEQUELIZE')
     private sequelize: Sequelize,
   ) {}
-
+  //TODO: задание тестовое, так что запросов немного, выделил в отдельный service
   async createTransaction(options?: {
     isolationLevel?: Transaction.ISOLATION_LEVELS;
   }): Promise<Transaction> {
