@@ -13,6 +13,6 @@ export class BookingController {
 
   @Get(':userId')
   findOne(@Param('userId') id: string) {
-    return this.bookingService.findOne(+id);
+    return this.bookingService.findOne(id);
   }
 }
