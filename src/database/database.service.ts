@@ -44,7 +44,7 @@ export class DatabaseService {
   ) {
     return await this.booking.create({ event_id, user_id }, { transaction });
   }
-  async getUsersEvents(user_id: number) {
+  async getUsersEvents(user_id: string) {
     return await this.booking.findAll({ where: { user_id } });
   }
   async findBooking(

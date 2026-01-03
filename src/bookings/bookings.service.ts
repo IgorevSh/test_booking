@@ -55,7 +55,7 @@ export class BookingsService {
     }
   }
 
-  async findOne(user_id: number) {
+  async findOne(user_id: string) {
     return await this.databaseService.getUsersEvents(user_id);
   }
 }
